@@ -1,0 +1,20 @@
+https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Configurando-Git-por-primera-vez
+
+
+1 git cmd:
+  git config --global user.name {usuario github}
+  git config --global user.email {correo github}
+   verificacion: git config user.name  
+                 git config user.email
+
+2 git gui
+  Clone existing repository
+       Source location: url del repo
+  
+  
+  
+  
+
+Repo del curso 
+https://github.com/vladimir-ascue/20231-FE1-3JM   --- Direcicon web
+https://github.com/vladimir-ascue/20231-FE1-3JM.git-- Doreccion del Repositorio
