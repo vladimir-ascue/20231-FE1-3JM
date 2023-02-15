@@ -1,15 +1,29 @@
-h1{
+h1 {
     color: blue;
 }
 
-p{
+p {
     color: green;
 }
 
-.parrafo{
+.parrafo {
     color: red;
 }
 
-#parrafo{
+#parrafo {
     color: pink;
+}
+
+#data {
+    width: 500px;
+    border: 1px solid black;
+    color: blue;
+}
+
+#data tr {
+    background-color: bisque;
+}
+
+#data tr:hover {
+    background-color: chocolate;
 }
