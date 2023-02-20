@@ -1,7 +1,39 @@
+<!--
+    Selectores: Palabras reservadas 'class', 'id' y van dentro de la etiqueta de apertura
+        class: Selector Identificar un grupo de elementos del documento - identificador css(.)
+        id : Selector Identificar un unico elemento del documento - identificador css(#)
+
+
+    CASESENSITIVE: Sensible a mayusculas y minusculas
+                    estilos.css != Estilos.css
+
+    Rutas: ../ >> la carpeta padre (La que contiene el archio actual)
+            ./ >> la carpeta actual
+
+    ESTILOS DESDE ARCHIVO EXTERNO: El estilo mas general que podra ser usado en difentes archivos y lugares del proyecto
+        en la etiqueta link dentro de <head></head>
+
+    ESTILOS INCRUSTADOS: El estilo es meno general se usara en una sola página web
+        <style> ... </style>
+        dentro de <head>  ... </style>
+
+    ESTILOS EN LINEA: El estilo especifico se usara solo en un elemento del documento web
+        <a style = " ... "> ... </a>
+        van dentro de la etiqueta de apertura
+
+-->
+
 <html>
 
 <head>
     <title>Ejemplo01</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- archivos externos -->
+    <style>
+        #parrafo {
+            color: brown;
+        }
+    </style>
 </head>
 <header>
     <!-- Cabecera -->
@@ -16,19 +48,46 @@
     <main>
         <!-- Principal -->
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fugit porro, possimus saepe amet aliquid a voluptatibus voluptas nihil error asperiores officiis non dolor ipsam dolorem eligendi et nisi natus!</p>
+        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fugit porro, possimus saepe amet aliquid a voluptatibus voluptas nihil error asperiores officiis non dolor ipsam dolorem eligendi et nisi natus!</p>
 
-        <h1 style="color: RED;"> A HTML LE IMPORTA UN BLEDO TU REPUTACION PROFESIONAL </h1>
+        <h1> A HTML LE IMPORTA UN BLEDO TU REPUTACION PROFESIONAL </h1>
+        <p id="parrafo" style="color: Skyblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur est ipsum maiores voluptas deserunt aliquid fugiat placeat odit dolorem maxime vero obcaecati error quo, inventore laboriosam ex et aliquam!</p>
 
-        <H2 style="color: blue;"> HTML <strong>NO </strong> es un lenguaje d programación </H2>
+        <H2> HTML <strong>NO </strong> es un lenguaje d programación </H2>
 
-        <H2 style="color: blue;"> HTML <strong>WEB SEMANTICA</strong></H2>
+        <H3> HTML <strong>WEB SEMANTICA</strong></H3>
 
-        <table>
+        <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br><br><br><br> Dolore voluptatum fugiat deleniti, saepe tenetur doloribus hic perspiciatis, molestiae beatae excepturi molestias. Corrupti accusamus nostrum tempore non debitis quo autem
+            provident!
+        </p>
 
-            <table>
+        <table id="data">
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+        </table>
+
 
     </main>
+
+
 
     <footer>
         <!-- Pie de pagina -->
