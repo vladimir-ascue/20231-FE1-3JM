@@ -1,0 +1,58 @@
+#contendor{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    height: 450px;
+    border: 1px solid black;
+    padding: 25px;
+}
+
+.caja{
+    background-color: red;
+    width: 150px;
+    height: 80px;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    #contendor{
+        display: inline-block;        
+        width: 200px;
+        background-color: yellowgreen;
+        height: 450px;
+        border: 1px solid black;
+        padding: 25px;
+    }
+    .caja{        
+        background-color: blue;
+        color: white;
+        width: 150px;
+        height: 30px;        
+    }
+    .c1{
+        background-color: rgba(0, 0, 255, 0);
+        width: 30px;
+        border: none;
+    }
+    .c1:hover{
+        background-color: rgba(0, 0, 255, 1);
+        border: 1px solid black;
+        width: 150px;
+        transition: 0.2s;
+    }
+    .c2{
+        background-color: rgba(0, 0, 255, 0.1);
+    }
+    .c3{
+        background-color: rgba(0, 0, 255, 0.1);
+    }
+    .c4{
+        background-color: rgba(0, 0, 255, 0.1);
+    }
+    .c5{
+        background-color: rgba(0, 0, 255, 0.1);
+    }
+    
+  }
